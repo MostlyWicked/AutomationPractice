@@ -26,7 +26,7 @@ public class GoogleSearchResultComponent extends AutoComponent {
 		System.out.println("Clicked on search result link.");
 	}
 	
-	public String getTitle(){ //TODO this doesn't work well - fix xpath
+	public String getTitle(){
 		System.out.println(this.elem.getAttribute("outerHTML"));
 		return this.elem.findElement(By.xpath(this.linkXpath + "/span")).getText();
 	}
